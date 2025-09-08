@@ -12,6 +12,7 @@ const config = {
   CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET
     ? process.env.CLOUDINARY_API_SECRET
     : "Unable to fetch CLOUDINARY_API_SECRET from .env file",
+  STRIPE_SK: process.env.STRIPE_SK as string,
   CLOUDINARY_NAME: process.env.CLOUDINARY_NAME ? process.env.CLOUDINARY_NAME : "Unable to fetch CLOUDINARY_NAME from .env file",
   CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY ? process.env.CLOUDINARY_API_KEY : "Unable to fetch CLOUDINARY_API_KEY from .env file"
 };
@@ -26,5 +27,6 @@ export const {
   SMTP_HOST,
   CLOUDINARY_API_SECRET,
   CLOUDINARY_NAME,
+  STRIPE_SK,
   CLOUDINARY_API_KEY
 } = config;
